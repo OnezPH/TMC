@@ -39,19 +39,26 @@ body{font-family: 'Poppins', sans-serif;}
   height: 100vh;
 }
 .nav-btn-order-location{display: flex;}
-.nav-btn-right a{
+.nav-btn-location a{
   text-decoration: none;
-  color: #fff;
+  color: #F9AC46;
+  font-size: 14px;
 }
-.nav-btn-right{
-  width: 90px;
-  height: 40px;
-  border-radius: 6px;
-  background-color: rgb(255, 171, 59);
+.nav-btn-location{
+  border: solid 2px #F9AC46;
+  background: #fff;
+}
+.nav-btn-order-now{
   outline: none;
   border: none;
-  margin: 0 6px;
-  padding: 5px;
-  cursor: pointer;
+  background: #F9AC46;
   color: #fff;
+  font-size: 14px;
+}
+.nav-btn-location,
+.nav-btn-order-now{
+  border-radius: 10px;
+  margin: 0 5px;
+  padding: 10px 15px;
+  cursor: pointer;
 }
