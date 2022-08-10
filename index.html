@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <!--
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  -->
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Tres Maria's Cassava Cake - Home</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="broser-tab-logo.png">
+  <link rel="icon" href="asset/logo/broser-tab-logo.png">
 </head>
 <body>
   <div class="main-con">
@@ -15,14 +17,35 @@
         <div class="nav-wrap">
           <div class="logo">
             <a href="index.html">
-              <img class="nav-logo" src="logo-removebg.png" alt="Tres Maria's Cassava Cake Logo">
+              <img class="nav-logo" src="asset/logo/logo-removebg.png" alt="Tres Maria's Cassava Cake Logo">
             </a>
           </div>
           <div class="links">
-            <a class="nav-btn-link" href="#">Home</a>
-            <a class="nav-btn-link" href="#">Category</a>
-            <a class="nav-btn-link" href="#">About Us</a>
-            <a class="nav-btn-link" href="#">Contact Us</a>
+            <input class="radio-nav-animation-check" type="radio" id="l1" name="nav" value="l1">
+            <a class="nav-btn-link l1" href="#">
+              <label for="l1">
+                Home
+              </label>
+            </a>
+            <input class="radio-nav-animation-check" type="radio" id="l2" name="nav" value="l2">
+            <a class="nav-btn-link l2" href="#">
+              <label for="l2">
+                Category
+              </label>
+            </a>
+            <input class="radio-nav-animation-check" type="radio" id="l3" name="nav" value="l3">
+            <a class="nav-btn-link l3" href="#">
+              <label for="l3">
+                About Us
+              </label>
+            </a>
+            <input class="radio-nav-animation-check" type="radio" id="l4" name="nav" value="l4">
+            <a class="nav-btn-link l4" href="#">
+              <label for="l4">
+                Contact Us
+              </label>
+            </a>
+            <div class="bottom-line-nav"></div>
           </div>
           <div class="nav-btn-order-location">
             <button class="nav-btn-location" type="button" name="button">
@@ -34,6 +57,14 @@
       </div>
     </nav>
     <div class="landing-page">
+      <div class="landing-page-text-con">
+        <div class="text-wrap">
+          <h1>Every bite is a taste of joy</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque expedita sunt, odit ipsum atque nesciunt, facere cupiditate deserunt impedit quaerat? Laborum aspernatur accusantium quaerat pariatur modi est dolorum perferendis consequatur.</p>
+          <button type="button" name="button">Order Now</button>
+        </div>
+      </div>
+      <img class="landing-page-cassava-cake" src="asset/bg/cassava-cake.png" alt="Cassava Cake">
     </div>
   </div>
 </body>
