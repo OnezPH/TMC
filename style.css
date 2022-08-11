@@ -16,16 +16,40 @@ body{font-family: 'Poppins', sans-serif;}
   margin: auto;
   padding: 15px 0;
 }
+
 .nav-wrap{
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.logo{
+  position: relative;
+  animation: logo .3s linear;
+}
+@keyframes logo {
+  from{
+    left: -30px;
+  }
+  to{
+    left: 0;
+  }
 }
 .nav-logo{width: 130px;}
 .links{
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-template-rows: auto auto;
+
+  position: relative;
+  animation: links .3s linear;
+}
+@keyframes links {
+  from{
+    top: -20px;
+  }
+  to{
+    top: 0;
+  }
 }
 .nav-btn-link{
   text-decoration: none;
@@ -86,7 +110,19 @@ body{font-family: 'Poppins', sans-serif;}
   margin-left: 270px;
 }
 .radio-nav-animation-check{display: none;}
-.nav-btn-order-location{display: flex;}
+.nav-btn-order-location{
+  display: flex;
+  position: relative;
+  animation: btn-order-location .3s linear;
+}
+@keyframes btn-order-location {
+  from{
+    right: -30px;
+  }
+  to{
+    right: 0;
+  }
+}
 .nav-btn-location a{
   text-decoration: none;
   color: #F9AC46;
@@ -111,13 +147,25 @@ body{font-family: 'Poppins', sans-serif;}
   cursor: pointer;
 }
 .landing-page{
-  width: 100%;
   height: 100vh;
 
   background-image: url(asset/vector/blob.svg);
   background-repeat: no-repeat;
   background-position: 400px -80px;
   background-size: 1400px;
+
+  overflow: hidden;
+
+  animation: land-page .4s linear;
+}
+@keyframes land-page {
+  from{
+    background-position: 700px -200px;
+    background-size: 900px;
+  }
+  to{
+    background-position: 400px -80px;
+  }
 }
 .landing-page-cassava-cake{
   width: 500px;
@@ -125,24 +173,48 @@ body{font-family: 'Poppins', sans-serif;}
   position: absolute;
   right: 0;
   top: 100px;
+
+  animation: cc-landing-page 1s linear;
+}
+@keyframes cc-landing-page {
+  from{
+    opacity: 50%;
+  }
+  to{
+    opacity: 100%;
+  }
 }
 .landing-page-text{
   display: block;
 }
 .text-wrap > h1{
-  font-size: 70px;
+  font-size: 80px;
   font-weight: 700;
+  line-height: 70px;
   color: #F9AC46;
   max-width: 500px;
+
+
 }
-.text-wrap > p{
+.text-wrap > p:nth-child(3){
   max-width: 600px;
+  margin: 10px 0;
 }
 .text-wrap{
   width: 50%;
   position: absolute;
   top: 200px;
-  left: 50px;
+  left: 100px;
+
+  animation: tw .3s linear;
+}
+@keyframes tw{
+  from{
+    margin: -40px 0 0  -40px
+  }
+  to{
+    margin: 0;
+  }
 }
 .text-wrap > button{
   width: 180px;
@@ -160,4 +232,18 @@ body{font-family: 'Poppins', sans-serif;}
   font-weight: 500;
 
   cursor: pointer;
+}
+.social-media-links{
+  display: flex;
+}
+.social-media-links > a{
+  font-size: 30px;
+  color: #fff;
+  background: #F9AC46;
+  margin: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
 }
